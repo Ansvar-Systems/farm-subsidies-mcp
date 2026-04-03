@@ -19,7 +19,7 @@ import { handleListSchemeOptions } from './tools/list-scheme-options.js';
 import { handleGetCrossCompliance } from './tools/get-cross-compliance.js';
 import { handleSearchApplicationGuidance } from './tools/search-application-guidance.js';
 
-const SERVER_NAME = 'farm-subsidies-mcp';
+const SERVER_NAME = 'uk-farm-subsidies-mcp';
 const SERVER_VERSION = '0.1.0';
 
 const TOOLS = [

@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  farm-subsidies-mcp:
+  uk-farm-subsidies-mcp:
     build: .
     ports:
       - "3000:3000"

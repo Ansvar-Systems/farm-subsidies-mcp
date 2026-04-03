@@ -11,7 +11,7 @@ concurrency:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: farm-subsidies-mcp
+  IMAGE_NAME: uk-farm-subsidies-mcp
 
 permissions:
   contents: read

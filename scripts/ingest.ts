@@ -1,5 +1,5 @@
 /**
- * Farm Subsidies MCP -- Data Ingestion Script
+ * UK Farm Subsidies MCP -- Data Ingestion Script
  *
  * Fetches all SFI actions from the GOV.UK Content API, parses payment rates,
  * eligibility, and duration from the HTML body, then inserts into SQLite.
@@ -72,7 +72,7 @@ function sleep(ms: number): Promise<void> {
 
 async function fetchJson<T>(url: string): Promise<T> {
   const res = await fetch(url, {
-    headers: { 'Accept': 'application/json', 'User-Agent': 'farm-subsidies-mcp/0.1.0 (data ingestion)' },
+    headers: { 'Accept': 'application/json', 'User-Agent': 'uk-farm-subsidies-mcp/0.1.0 (data ingestion)' },
   });
   if (!res.ok) {
     throw new Error(`HTTP ${res.status} for ${url}`);
@@ -627,7 +627,7 @@ function writeCoverage(actions: ParsedAction[], ftsCount: number): void {
   const withDuration = actions.filter(a => a.durationYears !== null).length;
 
   const coverage = {
-    mcp_name: 'Farm Subsidies MCP',
+    mcp_name: 'UK Farm Subsidies MCP',
     jurisdiction: 'GB',
     build_date: now,
     source: 'GOV.UK Content API',
@@ -653,7 +653,7 @@ async function main(): Promise<void> {
   mkdirSync('data', { recursive: true });
   mkdirSync(CACHE_DIR, { recursive: true });
 
-  console.log('Farm Subsidies MCP -- Data Ingestion');
+  console.log('UK Farm Subsidies MCP -- Data Ingestion');
   console.log('====================================\n');
 
   // Step 1: Fetch all SFI actions from search API

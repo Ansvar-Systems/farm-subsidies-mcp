@@ -1,11 +1,11 @@
 {
-  "name": "@ansvar/farm-subsidies-mcp",
+  "name": "@ansvar/uk-farm-subsidies-mcp",
   "version": "0.1.0",
   "description": "UK farm subsidy schemes via MCP -- SFI options, eligibility, payment rates, cross-compliance",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "farm-subsidies-mcp": "dist/server.js"
+    "uk-farm-subsidies-mcp": "dist/server.js"
   },
   "scripts": {
     "build": "tsc",
@@ -27,7 +27,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansvar-systems/farm-subsidies-mcp"
+    "url": "https://github.com/ansvar-systems/uk-farm-subsidies-mcp"
   },
   "homepage": "https://ansvar.eu/open-agriculture",
   "engines": {

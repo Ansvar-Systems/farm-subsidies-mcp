@@ -20,7 +20,7 @@ export function buildMeta(overrides?: Partial<Meta>): Meta {
     data_age: overrides?.data_age ?? 'unknown',
     source_url: overrides?.source_url ?? 'https://www.gov.uk/government/collections/sustainable-farming-incentive-guidance',
     copyright: 'Data: Crown Copyright. Server: Apache-2.0 Ansvar Systems.',
-    server: 'farm-subsidies-mcp',
+    server: 'uk-farm-subsidies-mcp',
     version: '0.1.0',
     ...overrides,
   };

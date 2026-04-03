@@ -1,7 +1,7 @@
-# Farm Subsidies MCP
+# UK Farm Subsidies MCP
 
-[![CI](https://github.com/ansvar-systems/farm-subsidies-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/farm-subsidies-mcp/actions/workflows/ci.yml)
-[![GHCR](https://github.com/ansvar-systems/farm-subsidies-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/farm-subsidies-mcp/actions/workflows/ghcr-build.yml)
+[![CI](https://github.com/ansvar-systems/uk-farm-subsidies-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/uk-farm-subsidies-mcp/actions/workflows/ci.yml)
+[![GHCR](https://github.com/ansvar-systems/uk-farm-subsidies-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/uk-farm-subsidies-mcp/actions/workflows/ghcr-build.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 UK farm subsidy schemes via the [Model Context Protocol](https://modelcontextprotocol.io). Query SFI options, eligibility criteria, payment rates, and cross-compliance requirements -- all from your AI assistant.
@@ -21,9 +21,9 @@ Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "farm-subsidies": {
+    "uk-farm-subsidies": {
       "command": "npx",
-      "args": ["-y", "@ansvar/farm-subsidies-mcp"]
+      "args": ["-y", "@ansvar/uk-farm-subsidies-mcp"]
     }
   }
 }
@@ -32,25 +32,25 @@ Add to `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add farm-subsidies npx @ansvar/farm-subsidies-mcp
+claude mcp add uk-farm-subsidies npx @ansvar/uk-farm-subsidies-mcp
 ```
 
 ### Streamable HTTP (remote)
 
 ```
-https://mcp.ansvar.eu/farm-subsidies/mcp
+https://mcp.ansvar.eu/uk-farm-subsidies/mcp
 ```
 
 ### Docker (self-hosted)
 
 ```bash
-docker run -p 3000:3000 ghcr.io/ansvar-systems/farm-subsidies-mcp:latest
+docker run -p 3000:3000 ghcr.io/ansvar-systems/uk-farm-subsidies-mcp:latest
 ```
 
 ### npm (stdio)
 
 ```bash
-npx @ansvar/farm-subsidies-mcp
+npx @ansvar/uk-farm-subsidies-mcp
 ```
 
 ## Example Queries

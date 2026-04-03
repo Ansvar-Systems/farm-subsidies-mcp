@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ansvar-systems/uk-farm-subsidies",
+  "description": "UK farm subsidy schemes via MCP. 234 SFI and Countryside Stewardship actions with payment rates, eligibility, cross-compliance. Live from GOV.UK API.",
+  "repository": {
+    "url": "https://github.com/ansvar-systems/uk-farm-subsidies-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@ansvar/uk-farm-subsidies-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "transportType": "streamable-http",
+      "url": "https://mcp.ansvar.eu/uk-farm-subsidies/mcp"
+    }
+  ]
+}

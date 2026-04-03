@@ -1,5 +1,6 @@
 {
   "name": "@ansvar/uk-farm-subsidies-mcp",
+  "mcpName": "io.github.ansvar-systems/uk-farm-subsidies",
   "version": "0.1.0",
   "description": "UK farm subsidy schemes via MCP -- SFI options, eligibility, payment rates, cross-compliance",
   "type": "module",
